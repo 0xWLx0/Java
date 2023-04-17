@@ -1,0 +1,9 @@
+package lab_7.ex02;
+
+public interface Borrowable {
+    void checkout(String borrowerName, String dueDate);
+
+    void returned();
+
+    String getStatus();
+}
