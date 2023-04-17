@@ -1,0 +1,100 @@
+import java.util.*;
+
+public class Project_69 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		// variables
+		int rows, columns;
+
+		// create a 2D array with size from the user 
+		// teke the rows
+		System.out.print("Enter the number rows: ");
+		rows = input.nextInt();
+
+		// take the columns
+		System.out.print("Enter the number columns: ");
+		columns = input.nextInt();
+
+		// declaring and initializing the array
+		String[][] str = new String[rows][columns];
+
+		// rows
+		for(int row = 0; row < rows; row++) {
+
+			System.out.printf("Row %d%n" , row + 1);
+
+			// columns
+			for(int column = 0; column < columns; column++) {
+
+				// put the user input in the 2D array
+				System.out.print("Enter a string: ");
+				str[row][column] = input.next();
+
+			}
+
+			System.out.println();
+
+		}
+
+		// print the 2D array
+		/*for(int row  = 0; row < rows; row++) {
+
+			for(int col = 0; col < columns; col++)
+				System.out.printf("%s ", str[row][col]);
+
+			System.out.println();
+
+		}*/
+
+		for(String[] row: str)
+			System.out.println(Arrays.toString(row));
+
+		// create a 2D array with size from the user 
+		// teke the rows
+		System.out.print("Enter the number rows: ");
+		rows = input.nextInt();
+
+		// take the columns
+		System.out.print("Enter the number columns: ");
+		columns = input.nextInt();
+
+		// declaring and initializing the array
+		int[][] nums = new int[rows][columns];
+
+		// rows
+		for(int row = 0; row < rows; row++) {
+
+			System.out.printf("Row %d%n" , row + 1);
+
+			// columns
+			for(int column = 0; column < columns; column++) {
+
+				// put the user input in the 2D array
+				System.out.print("Enter a number: ");
+				nums[row][column] = input.nextInt();
+
+			}
+
+			System.out.println();
+
+		}
+
+		// print the 2D array
+		/*for(int row  = 0; row < rows; row++) {
+
+			for(int col = 0; col < columns; col++)
+				System.out.printf("%s ", nums[row][col]);
+
+			System.out.println();
+
+		}*/
+
+		for(int[] row: nums)
+			System.out.println(Arrays.toString(row));
+
+	}
+
+}
